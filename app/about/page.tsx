@@ -55,7 +55,6 @@ return (
   </div>
 
   <div style={{ padding: '96px 60px' }}>
-    {/* Founding idea */}
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, marginBottom: 72, alignItems: 'end', paddingBottom: 56, borderBottom: '1px solid rgba(55,24,37,.1)' }}>
       <h2 className="rv" style={{ fontFamily: 'var(--fd)', fontSize: 'clamp(34px,4.5vw,62px)', fontWeight: 300, lineHeight: 1.05, color: 'var(--b)', marginTop: 18 }}>
         The <em style={{ fontStyle: 'italic', color: 'var(--bl)' }}>Founding</em><br />Idea
@@ -65,8 +64,7 @@ return (
       </p>
     </div>
 
-    {/* Founders */}
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, background: 'rgba(55,24,37,.08)', marginBottom: 0 }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, background: 'rgba(55,24,37,.08)' }}>
       {founders.map((f) => (
         <article key={f.init} className="rv" style={{ background: 'var(--c)', padding: '52px 44px', position: 'relative' }}>
           <div style={{ position: 'absolute', top: 22, right: 22, fontFamily: 'var(--fd)', fontSize: 130, fontWeight: 300, color: 'rgba(55,24,37,.047)', lineHeight: 1 }}>{f.init}</div>
@@ -85,7 +83,6 @@ return (
     </div>
   </div>
 
-  {/* Philosophy */}
   <div style={{ background: 'var(--b)', padding: '60px', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 36 }}>
     {philosophy.map((p, i) => (
       <div key={p.n} className="rv" style={{ padding: '0 18px', borderRight: i < 2 ? '1px solid rgba(240,232,224,.06)' : 'none' }}>
