@@ -3,6 +3,7 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { MenuProvider } from "@/components/MenuContext";
 import { InquiryProvider } from "@/components/InquiryContext";
+import { Analytics } from "@vercel/analytics/next"
 
 
 const cormorant = Cormorant_Garamond({
@@ -57,6 +58,7 @@ export default function RootLayout({
                         {children}
                     </InquiryProvider>
                 </MenuProvider>
+                <Analytics />
             </body>
         </html>
     );
